@@ -1,0 +1,60 @@
+.hero {
+    min-height: 320px;
+    padding: 55px;
+    margin-bottom: 35px;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 80% 30%,
+            rgba(236, 72, 153, 0.35),
+            transparent 35%),
+        linear-gradient(135deg,
+            #161022,
+            #0d0d17);
+}
+
+.hero p:first-child {
+    color: #a855f7;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    margin: 15px 0;
+    font-size: clamp(42px, 6vw, 78px);
+    line-height: 1;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg,
+            #8b5cf6,
+            #ec4899);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p:last-child {
+    color: #9999a8;
+    max-width: 550px;
+    line-height: 1.7;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+            minmax(280px, 1fr));
+    gap: 12px;
+}
